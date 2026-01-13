@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@lhci/cli": "^0.13.0",
+    "yargs": "^17.7.2",
     "eslint": "^8.56.0",
     "html-validate": "^8.9.1",
     "linkinator": "^6.0.4",
@@ -28,5 +29,8 @@
   },
   "dependencies": {
     "gsap": "^3.12.5"
+  },
+  "overrides": {
+    "yargs": "^17.7.2"
   }
 }
