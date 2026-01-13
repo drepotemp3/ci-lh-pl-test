@@ -1,0 +1,32 @@
+{
+  "name": "static-landing-page",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:js": "eslint 'src/**/*.js'",
+    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:html": "html-validate 'src/**/*.html'",
+    "format": "prettier --write 'src/**/*.{html,css,js}'",
+    "format:check": "prettier --check 'src/**/*.{html,css,js}'",
+    "test:a11y": "pa11y-ci",
+    "test:links": "linkinator dist --recurse --skip 'example.com'",
+    "lighthouse": "lhci autorun"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.55.0",
+    "stylelint": "^16.1.0",
+    "stylelint-config-standard": "^36.0.0",
+    "prettier": "^3.1.1",
+    "html-validate": "^8.9.1",
+    "pa11y-ci": "^3.1.0",
+    "linkinator": "^6.0.4",
+    "@lhci/cli": "^0.13.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.4"
+  }
+}
